@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300;1,400;1,500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+.main-container{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-repeat: no-repeat;
+    background-image: linear-gradient(to left,rgb(62, 62, 151),rgb(95, 43, 102) 80%);
+}
+
+.container {
+    width: 30rem;
+    height: 400px;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 3px 9px 6px 4px rgba(0,0,0,0.29);
+    
+}
+
+.container h1 {
+    padding: 20px;
+    font-weight: 100;
+    font-size: 4rem;
+}
+
+.container h2 {
+    color:slateblue;
+    font-size: 2rem;
+    font-weight: 300;
+    padding: 2rem;
+}
+    
+.row-input {
+    margin-top: 2rem;
+    display: flex;
+}
+
+.row-input label{
+    color: slateblue;
+}
+
+.row-input input {
+    display: block;
+    padding: 10px;
+    outline: none;
+    font-size: 16px;
+    margin-right: 15px;
+    
+}
+
+@media screen and (max-width: 468px) {
+    
+    .container {
+        max-width: 340px;
+    }
+
+    .container h2 {
+        text-align: center;
+    }
+
+    .row-input input{
+        width: 140px;
+    }
+
+}
